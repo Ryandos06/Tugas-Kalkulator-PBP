@@ -1,0 +1,152 @@
+/* CSS untuk kalkulator */
+
+.kalkulator {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 157, 0);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    color: rgb(255, 157, 0);
+}
+
+.tombol button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin: 5px;
+    color: rgb(255, 157, 0);
+}
+
+/* Tambahkan font awesome untuk ikon */
+.tombol button i {
+    font-size: 18px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.999);
+}
+
+.navbar {
+ background-color: black;
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f1f1f1;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+/* Styling untuk footer */
+footer {
+    background-color: #333; /* Latar belakang berwarna gelap */
+    color: #ffc107; /* Warna teks kuning */
+    padding: 10px 0; /* Ruang padding atas dan bawah 10px, tanpa padding samping */
+    text-align: center; /* Teks di tengah secara horizontal */
+    flex-grow: 1; /* Alokasikan ruang tambahan ke footer */
+    display: flex; /* Mengatur elemen footer sebagai flex container */
+    flex-direction: column; /* Urutan vertikal konten */
+    justify-content: center; /* Teks di tengah secara vertikal */
+    align-items: center; /* Teks di tengah secara horizontal */
+    height: auto; /* Tinggi elemen footer 100% dari viewport height */
+}
+
+
+/* Styling untuk container utama */
+body {
+    display: flex; /* Mengatur body sebagai flex container */
+    flex-direction: column; /* Urutan vertikal konten */
+    min-height: 100vh; /* Set tinggi minimum 100% dari viewport height */
+    margin: 0; /* Hapus margin default */
+}
+
+/* Styling untuk konten situs (misalnya, konten utama) */
+main {
+    flex-grow: 1; /* Alokasikan ruang tambahan ke konten utama */
+}

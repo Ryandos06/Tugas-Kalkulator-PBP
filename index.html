@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body style="background-image: url('img/background.jpg');">
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Welcome</a>
+            <div class="navbar-toggle" id="navbarToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+<br>
+<br>
+    <div>
+        <h1 id="judul" style="text-align: center;">Kalkulator</h1>
+        <br>
+        <div class="kalkulator">
+            <input type="text" id="layar" placeholder="0" readonly>
+            <div class="tombol">
+                <button onclick="hapusLayar()">C</button>
+                <button onclick="tambahAngka('7')">7</button>
+                <button onclick="tambahAngka('8')">8</button>
+                <button onclick="tambahAngka('9')">9</button>
+                <button onclick="tambahAngka('+')"><i class="fas fa-plus"></i></button>
+                <button onclick="tambahAngka('4')">4</button>
+                <button onclick="tambahAngka('5')">5</button>
+                <button onclick="tambahAngka('6')">6</button>
+                <button onclick="tambahAngka('-')"><i class="fas fa-minus"></i></button>
+                <button onclick="tambahAngka('1')">1</button>
+                <button onclick="tambahAngka('2')">2</button>
+                <button onclick="tambahAngka('3')">3</button>
+                <button onclick="tambahAngka('*')"><i class="fas fa-times"></i></button>
+                <button onclick="tambahAngka('0')">0</button>
+                <button onclick="tambahAngka('.')">.</button>
+                <button onclick="tambahAngka('/')"><i class="fas fa-divide"></i></button>
+                <button onclick="hitung()">=</button>
+            </div>
+    </div>
+    </div>
+<br>
+<br>
+    <!-- footer -->
+    <footer class="bg-dark text-warning mt-auto">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <p>&copy; Kalkulator PBP | 2023</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    <!-- Hubungkan dengan Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Hubungkan dengan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
